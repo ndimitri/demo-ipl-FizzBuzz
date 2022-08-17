@@ -10,7 +10,7 @@ class FizzBuzzTest extends TestCase {
 
         //Act : Lance la fonction que l'on souhaite tester
         //La variable $actual contiendra du coup le résultat (le return) de la fonction appelé
-        $actual = $fizzBuzz->count();
+        $actual = $fizzBuzz->count(1);
 
         //Assert : vérfications des résultats de la fonction
         $this->assertEquals("1",$actual);
@@ -22,7 +22,7 @@ class FizzBuzzTest extends TestCase {
         $fizzBuzz = new FizzBuzz();
 
         //Act
-        $actual = $fizzBuzz.count();
+        $actual = $fizzBuzz->count(2);
 
         //Assert
         $this->assertEquals("2", $actual);
